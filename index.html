@@ -9,90 +9,60 @@
       content="Sabina's first website for Code The Dream Class"
     />
     <meta name="author" content="Sabina Ruzieva" />
-    <style>
-      nav {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-      }
-
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-      }
-
-      nav ul li {
-        display: inline;
-      }
-
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        padding: 5px 10px;
-      }
-
-      section {
-        margin-bottom: 20px;
-      }
-
-      img {
-        max-width: 100px;
-        height: auto;
-      }
-
-      .social-box {
-        display: inline-block;
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin-right: 10px;
-      }
-    </style>
-  </head>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Kalnia+Glaze:wght@100..700&family=Playwrite+CL:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">  
+</head>
   <body>
-    <header><h1 id="name">Sabina Ruzieva</h1></header>
-    <nav>
-      <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Connect">Connect</a></li>
-      </ul>
-    </nav>
-    <section ="About">
+      <header>
+      <h1>Sabina Ruzieva</h1>
+        <nav>
+          <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Connect">Connect</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section id="About">
       <h2>About</h2>
       <img src="Solmag.png" alt="Profile Picture" />
-      <p id="about-content">
+      <p>
         I am a student at CUNY QCC. Currently learning Programming basics such
         as HTML, CSS, and JavaScript from Code The Dream.
       </p>
     </section>
+
     <section id="Experience">
       <h2>Experience</h2>
-      <ul>
-        <li>
+      <ul class="experience-list">
+        <li class="experience-item">
           Teacher of basic subjects at specialized private kindergarten Child
           Development Center of Montessori
         </li>
-        <li>For 2 years as a volunteer at Global Dignity Uzbekistan</li>
-        <li>Undergaraduate Research Assistant at Bukhara State University</li>
+        <li class="experience-item">For 2 years as a volunteer at Global Dignity Uzbekistan</li>
+        <li class="experience-item">Undergaraduate Research Assistant at Bukhara State University</li>
       </ul>
     </section>
+
     <section id="Connect">
       <h2>Connect</h2>
-      <div class="social-box">
-        <a href="http://linkedin.com/in/sabina-ruzieva-838aa130a">LinkedIn</a>
+      <div class="social">
+        <a href="http://linkedin.com/in/sabina-ruzieva-838aa130a"><i class='bx bxl-linkedin-square'></i></a>
       </div>
-      <div class="social-box">
-        <a href="https://github.com/sabina0407">GitHub</a>
+      <div class="social">
+        <a href="https://github.com/sabina0407"><i class='bx bxl-github'></i></a>
       </div>
-      <div class="social-box">
+      <div class="social">
         <a
           href="https://www.instagram.com/sabina.r07?igsh=MXJndzVhNDRoOTg1ZA%3D%3D&utm_source=qr"
-          >Instagram@sabina.r07</a
+          ><i class='bx bxl-instagram'></i></a
         >
       </div>
     </section>
+        
   </body>
 </html>
