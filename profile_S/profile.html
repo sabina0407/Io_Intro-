@@ -9,30 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Kalnia+Glaze:wght@100..700&family=Playwrite+CL:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
-    <h1>Sabina Ruzieva</h1>
-    <nav>
-        <ul>
-           <li><a href="#About">About</a></li> 
-           <li><a href="#Experience">Experience</a></li>
-           <li><a href="#Projects">Projects</a></li>
-           <li><a href="#Skills">Skills</a></li>
-           <li><a href="#Connect">Connect</a></li>
-        </ul>
+
+   <header class="header">
+    <h1 class="logo">Sabina <span>Ruzieva</span></h1>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+    
+    <nav class="navbar">
+           <a href="#About" class="active">About</a>
+           <a href="#Education">Education</a>
+           <a href="#Projects">Projects</a>
+           <a href="#Skills">Skills</a>
+           <a href="#Contact">Contact</a>
        </nav>
     </header> 
    
 
-   <section id="About" class="about">
-        <h2>About</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio, quidem soluta assumenda adipisci quas maxime tempora cumque et recusandae, ipsam veniam, culpa a atque harum voluptatibus quae natus eligendi?</p>
-        <p><em>To be edited later!</em></p>
+   <section class="about" id="About" class="about">
+    <div class="about-img"><img src="images/Designer.png" alt="profile picture"></div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p>Hello! I’m a passionate newcomer to the tech industry, with a keen interest in programming, web development, and cybersecurity. My journey into technology is driven by a love for solving complex problems and creating innovative solutions. I’m excited to bring my fresh perspective and enthusiasm to every project, continuously learning and growing in this dynamic field. Let’s build something amazing together!</p>
+    </div>
    </section>
 
-   <section id="Experience">
-    <h2>Experience</h2>
-    <hr>
+   <!-- <section class="experience-section" id="Experience">
+    <h2 class="heading">Experience</h2>
     <div class="experience">
         <div class="job">
           <p class="job-title">Preschool Teacher at CDC</p>
@@ -47,38 +49,134 @@
             <p class="years"><em>October 2020 - December 2021</em></p>
           </div>
       </div>
-   </section>
+   </section> -->
   
+   <section class="education" id="Education">
+      <h2 class="heading-ed">Education</h2>
 
-   <section id="Projects">
-    <h2>Projects</h2>
-    <hr>
-    <ol>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-    </ol>
+      <div class="timeline-items">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+            <div class="timeline-date">2018-2022</div>
+            <div class="timeline-content">
+              <h3>Bukhara State University</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam ab rem corporis eveniet dolor, voluptate amet deleniti? Sapiente, minus quo optio atque animi aperiam distinctio facere sunt sed perspiciatis?</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+            <div class="timeline-date">2023-2025</div>
+            <div class="timeline-content">
+              <h3>CUNY QCC</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam ab rem corporis eveniet dolor, voluptate amet deleniti? Sapiente, minus quo optio atque animi aperiam distinctio facere sunt sed perspiciatis?</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>CTD Bootcamp</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam ab rem corporis eveniet dolor, voluptate amet deleniti? Sapiente, minus quo optio atque animi aperiam distinctio facere sunt sed perspiciatis?</p>
+            </div>
+        </div>
+
+      </div>
    </section>
 
-   <section id="Skills">
-    <h2>Skills</h2>
-    <hr>
-    <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-    </ul>
+
+
+   <section class="projects" id="Projects">
+    <h2 class="heading">Projects</h2>
+    
+    <div class="projects-container">
+
+      <div class="project-box">
+        <div class="project-info">
+          <h4>Project 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia corrupti ipsam placeat sed sequi. </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-info">
+          <h4>Project 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia corrupti ipsam placeat sed sequi. </p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-info">
+          <h4>Project 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia corrupti ipsam placeat sed sequi. </p>
+        </div>
+      </div>
+
+    </div>
+     
    </section>
 
-   <section id="Connect">
-    <h2>Connect</h2>
-    <hr>
-    <div class="social">
+   <section class="skills" id="Skills">
+    <h2 class="heading">Skills</h2>
+    
+    <div class="skills-container">
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <h4>Skill 1</h4>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <h4>Skill 2</h4>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <h4>Skill 3</h4>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <h4>Skill 4</h4>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <h4>Skill 5</h4>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-info">
+          <h4>Skill 6</h4>
+        </div>
+      </div>
+      </div>
+   </section>
+
+   <section class="contact" id="Contact">
+    <h2 class="heading">Contact</h2>
+    <!-- <div class="social">
     <a href="http://linkedin.com/in/sabina-ruzieva-838aa130a"><i class='bx bxl-linkedin-square'></i></a>
     <a href="https://github.com/sabina0407"><i class='bx bxl-github'></i></a>
     <a href="https://www.instagram.com/sabina.r07?igsh=MXJndzVhNDRoOTg1ZA%3D%3D&utm_source=qr"><i class='bx bxl-instagram'></i></a>
-    </div>
+    </div> -->
    </section>
 
+   <footer class="footer">
+
+   <div class="social">
+    <a href="http://linkedin.com/in/sabina-ruzieva-838aa130a"><i class='bx bxl-linkedin-square'></i></a>
+    <a href="https://github.com/sabina0407"><i class='bx bxl-github'></i></a>
+    <a href="https://www.instagram.com/sabina.r07?igsh=MXJndzVhNDRoOTg1ZA%3D%3D&utm_source=qr"><i class='bx bxl-instagram'></i></a>
+   </div>
+  </footer>
 </body>
 </html>
