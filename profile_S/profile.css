@@ -1,106 +1,300 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62%;
+  overflow-X: hidden; 
 }
 
 body {
-    background-color:antiquewhite;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
-    text-align: center;
+  background: #fcfcfc;
+  color: black;
 }
 
 header {
-    background-color:steelblue;
-    color:aliceblue;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 8%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
 }
 
-h1 {
-    font-family: Bona Nova SC, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size:x-large;
+.logo {
+  font-size: 3rem;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    margin-right: 10px;
+.logo:hover {
+  transform: scale(1.1);
 }
 
-
-nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
+span {
+  color: #808000; 
 }
 
-a:hover {
-    color:indianred;
+.navbar a {
+  font-size: 1.8rem;
+  color: black;
+  margin-left: 3rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #808000;
+  border-bottom: 2px solid #808000;
+}
+
+#menu-icon {
+  font-size: 3.3rem;
+  color:#808000;
+  display: none;
 }
 
 section {
-    padding: 50px;
+    padding: 8rem 7% 8rem;
+    min-height: 100vh;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  background: #EDEDE9;
 }
 
-h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
-    font-weight: bold;
-    color:#333333
- }
+.about-img {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 10px solid #808000; 
+}
 
- hr {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border : 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(141, 118, 195, 0), rgba(46, 111, 97, 0.75), rgba(98, 107, 49, 0));
-  }
-  
-  .about {
-    margin-top: 30px;
-  }
+.about-img img {
+  position: relative;
+  width: 30vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
- .experience {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Adjust the gap between each job box */
-  }
-  
-  .job {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s; 
-  }
-  
-  .job-title {
-    text-align: left;
-  }
-  
-  .years {
-    text-align: right;
-  }
-  
-  .job:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
+.heading {
+  text-align: center;
+  font-size: 8rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.heading-ed {
+  font-size: 7.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.education {
+  padding: 80px 10px;
+  background: #d6ccc2;
+}
+
+.education h2{
+  margin-bottom: 4rem;
+}
+
+.timeline-items{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-items::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background:  #808000;
+  left: calc(50% - 1px);
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:last-child{
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+ 
+.timeline-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #808000;
+  box-shadow: 0 0 25px #808000,
+              0 0 50px #808000;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 8px;
+}
+
+.timeline-date {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  margin: 5px 0 12px;
+}
+
+.timeline-content {
+  background-color: #d6ccc2;
+  border: 3px solid #808000;
+  padding: 20px 40px;
+  border-radius: 3rem;
+  box-shadow: 0 0 10px #808000;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #808000;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  color: black;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.projects {
+  background: #f5ebe0;
+  color: black;
+}
+
+.projects h2,
+.skills h2,
+.contact h2 {
+  margin-bottom: 8rem;
+  color: black;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.project-box {
+  background-color:#808000;
+  color: white;
+  height: 250px;
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.project-box:hover,
+.skill-box:hover {
+  background: white;
+  color: black;
+  border: 5px solid #808000;
+  transform: scale(1.03);
+}
+
+.project-box .project-info,
+.skill-box .skill-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 200px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 4em 4rem;
+}
+
+.project-info h4,
+.skill-info h4 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.project-info p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  max-height: 100px;
+  line-height: 1.5;
+  margin: 0.3rem 0 1rem;
+}
+
+.skills {
+  background: #e3d5ca;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.skill-box {
+  background-color: #808000;
+  color: white;
+  height: 100px;
+  border-radius: 2rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.contact {
+  background-color: #d5bdaf;
+}
 
   .social {
     display: flex;
@@ -112,10 +306,103 @@ h2 {
 
 .social a {
     font-size: 30px;
-    color:cornflowerblue;
+    color:aliceblue;
 }
 
 .social a:hover {
-    color:blueviolet;
+    color:#000080;
     transform: translateY(-6px);
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #808000;
+}
+
+@media(max-width:1200px){
+  html{
+    font-size: 55%;
+  }
+  .projects-container,
+  .skills-container {
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0 5rem;
+  }
+}
+
+@media(max-width:991px){
+  header{
+    padding: 2rem 3%;
+  }
+  section{
+    padding: 10rem 3% 2rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+  .timeline-items::before{
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(even),
+  .timeline-item:nth-child(odd){
+    padding-left: 36px;
+  }
+  .timeline-dot{
+    left: 0;
+  }
+}
+
+@media(max-width:895px){
+  #menu-icon{
+    display:block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: #EDEDE9;
+    border-left: 2px solid #808000;
+    border-bottom: 2px solid #808000;
+    border-bottom-left-radius: 2rem;
+    display: none;
+  }
+  .navbar.active{
+    display: block;
+  }
+  .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+  .about-content{
+    margin: 1rem 4rem;
+  }
+  .about-img{
+    border: none;
+  }
+  .about-img img{
+    width: 70vw;
+    margin-top: 1rem;
+    border: none;
+    margin-bottom: 3rem;
+  }
+
+.projects h2,
+.skills h2,
+.contact h2{
+  margin-bottom: 3rem;
+}
 }
