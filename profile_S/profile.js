@@ -43,3 +43,69 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+
+
+// Selects the form by name attribute
+const messageForm = document.getElementsByName("leave_message")[0];
+
+// Adds event listener for form submission
+messageForm.addEventListener("submit", function(event) {
+    // Prevents the default form submission behavior
+    event.preventDefault();
+
+    // Retrieves values from the form fields
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+
+    console.log(usersName, usersEmail, usersMessage);
+
+    // Resets form fields
+    messageForm.reset();
+
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.querySelector("ul");
+
+    const newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>: <span>${usersMessage}</span>`;
+
+    // Creates a remove button
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "remove";
+    removeButton.type = "button";
+
+    // Adds event listener to the remove button
+    removeButton.addEventListener("click", function() {
+        const entry = removeButton.parentNode; // Find the parent <li>
+        entry.remove(); // Remove the entry from the DOM
+        // Hide the message section if the list is empty
+        if (messageList.children.length === 0) {
+            messageSection.style.display = "none";
+        }
+    });
+
+    // Creates an edit button
+    const editButton = document.createElement("button");
+    editButton.innerText = "edit";
+    editButton.type = "button";
+
+    // Adds event listener to the edit button
+    editButton.addEventListener("click", function() {
+        // Prompt the user for a new message
+        const newMessageText = prompt("Edit your message:", usersMessage);
+        if (newMessageText !== null) {
+            // Updates the message span with the new text
+            newMessage.querySelector("span").innerText = newMessageText;
+        }
+    });
+
+    // Appends the remove and edit buttons to the new message
+    newMessage.appendChild(removeButton);
+    newMessage.appendChild(editButton);
+    // Appends the new message to the message list
+    messageList.appendChild(newMessage);
+
+    // Shows the message section if it was hidden
+    messageSection.style.display = "block";
+});
