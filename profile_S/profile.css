@@ -90,7 +90,7 @@ section {
 
 .about-img img {
   position: relative;
-  width: 30vw;
+  width: 20vw;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -304,7 +304,7 @@ section {
   transition: 0.4s ease-in-out;
 }
 
-.contact {
+.message {
   background-color: #d5bdaf;
 }
 
@@ -325,6 +325,79 @@ section {
     color:#000080;
     transform: translateY(-6px);
 }
+
+
+.message h2 {
+  margin-bottom: 3rem;
+}
+
+.message form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.message form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.message form .input-box input,
+.message form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: black;
+  background: #d5bdaf;
+  border-radius: 0.8rem;
+  border: 2px solid #808000;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.message form button {
+  margin-top: 2rem;
+  display: block;
+  background-color: #808000;
+  border-radius: 5px;
+  border: 2px solid #808000;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+#messages {
+  display: none;
+}
+
+
+#messages li {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  flex-direction: row;
+}
+#messages a {
+  font-weight: bold;    
+  flex-wrap: wrap;
+  float:left; 
+  margin-right: 2em;   
+}
+#messages ul {
+  list-style-type: none;
+}
+#messages button {
+  border-radius:5px;
+  font-size: 20px; 
+  background-color: #d5bdaf;
+  float: right;  
+  box-shadow: 5px 5px 5px#bfbfbf;     
+}
+
+
 
 footer p{
   margin-top: 15px;
@@ -414,7 +487,7 @@ footer p{
     border: none;
   }
   .about-img img{
-    width: 70vw;
+    width: 50vw;
     margin-top: 1rem;
     border: none;
     margin-bottom: 3rem;
