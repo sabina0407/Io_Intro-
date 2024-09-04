@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Kalnia+Glaze:wght@100..700&family=Playwrite+CL:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-</head>
+    <link href="css/index.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Kalnia+Glaze:wght@100..700&family=Playwrite+CL:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Home page ; Sticky header-->
     <div class="hero">
-    <header class="header"> 
-       <a href="#"> <h1 class="logo">Sabina</h1></a>
+      <header class="header">
+        <a href="#"> <h1 class="logo">Sabina</h1></a>
 
         <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#About">About</a>
-            <a href="#Education">Education</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Contact">Contact</a>
+          <a href="#About">About</a>
+          <a href="#Education">Education</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Contact">Contact</a>
         </nav>
-    </header>
+      </header>
 
-    <div class="hero_text">
+      <div class="hero_text">
         <h2 class="hero_title">Hi, It's Sabina Ruzieva</h2>
         <p class="hero_info">I am an amateur Web Developer</p>
+      </div>
     </div>
-    </div>
-    <hr>
+    <hr />
 
-<!-- About me section -->
+    <!-- About me section -->
     <section class="about" id="About">
-        <div class="about-img"><img src="img/AI_Me.png" alt="profile picture"></div>
-        <div class="about-content">
-          <h2 class="heading">About</h2>
-          <p> I’m a passionate newcomer to the tech industry, with a keen interest in <strong>programming, web development,</strong> and <strong>cybersecurity</strong>. My journey into technology is driven by a love for solving complex problems and creating innovative solutions. I’m excited to bring my fresh perspective and enthusiasm to every project, continuously learning and growing in this dynamic field. </p>
-          <p><em>Let’s build something amazing together!</em></p>
+      <div class="about-img">
+        <img src="img/AI_Me.png" alt="profile picture" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About</h2>
+        <p>
+          I’m a passionate newcomer to the tech industry, with a keen interest
+          in <strong>programming, web development,</strong> and
+          <strong>cybersecurity</strong>. My journey into technology is driven
+          by a love for solving complex problems and creating innovative
+          solutions. I’m excited to bring my fresh perspective and enthusiasm to
+          every project, continuously learning and growing in this dynamic
+          field.
+        </p>
+        <p><em>Let’s build something amazing together!</em></p>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Education section -->
+    <section class="education" id="Education">
+      <h2 class="heading">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="bx bxs-graduation"></i></div>
+          <div class="timeline-date">2018-2022</div>
+          <div class="timeline-content">
+            <h3>Bukhara State University</h3>
+            <p>
+              Bachelor of Arts in Foreign Language and Literature (English
+              Language)
+            </p>
+          </div>
         </div>
-       </section>
-       <hr>
 
-<!-- Education section -->
-       <section class="education" id="Education">
-        <h2 class="heading">Education</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class='bx bxs-graduation'></i></div>
-                    <div class="timeline-date">2018-2022</div>
-                    <div class="timeline-content">
-                        <h3>Bukhara State University</h3>
-                        <p>Bachelor of Arts in Foreign Language and Literature (English Language)</p>
-                    </div>
-            </div>
-           
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class='bx bxs-school'></i></div>
-                    <div class="timeline-date">2023-2025</div>
-                    <div class="timeline-content">
-                        <h3>CUNY QCC</h3>
-                        <p>Associate Degree in Computer Science and Information Security</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class='bx bx-laptop'></i></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3>CTD Bootcamp</h3>
-                        <p>Intro to Programming courses: HTML, CSS and JavaScript</p>
-                    </div>
-            </div>
-
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="bx bxs-school"></i></div>
+          <div class="timeline-date">2023-2025</div>
+          <div class="timeline-content">
+            <h3>CUNY QCC</h3>
+            <p>Associate Degree in Computer Science and Information Security</p>
+          </div>
         </div>
-       </section>
-       <hr>
 
-       <!-- adding projects section; Fetch API (connecting github repositiry) with js -->
-       <section class="projects" id="Projects">
-            <h2 class="heading">Projects</h2>
-            <ul> </ul>
-       </section>
-       <hr>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="bx bx-laptop"></i></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>CTD Bootcamp</h3>
+            <p>Intro to Programming courses: HTML, CSS and JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
 
-       <section class="skills" id="Skills"> 
-        <h2 class="heading">Skills</h2>
+    <!-- adding projects section; Fetch API (connecting github repositiry) with js -->
+    <section class="projects" id="Projects">
+      <h2 class="heading">Projects</h2>
+      <ul></ul>
+    </section>
+    <hr />
 
-        <ul class="skills-container"> 
-            <!-- Skill items appended through JavaScript -->
-        </ul>
+    <section class="skills" id="Skills">
+      <h2 class="heading">Skills</h2>
 
-        <!-- <div class="skills-container">
+      <ul class="skills-container">
+        <!-- Skill items appended through JavaScript -->
+      </ul>
+
+      <!-- <div class="skills-container">
         <div class="skill-box">
                 <div class="skill-title">
                     <div class="skill-img">
@@ -157,51 +174,70 @@
             </div>
 
         </div> -->
-       </section>
-       <hr>
+    </section>
+    <hr />
 
-       <!-- Leave a message (Contact) section -->
-       <section class="contact" id="Contact">
-        <h2 class="heading">Leave a Message</h2>
-        <div class="contact-form">
+    <!-- Leave a message (Contact) section -->
+    <section class="contact" id="Contact">
+      <h2 class="heading">Leave a Message</h2>
+      <div class="contact-form">
         <form name="leave_message">
-    
-          <label for="usersName">Name </label><br>
-          <input type="text" id="usersName" name="usersName" placeholder="Anna Swan" required>
-    
-          <label for="usersEmail">Email </label><br>
-          <input type="email" id="usersEmail" name="usersEmail" placeholder="anna_swan@gmail.com" required>
-    
-          <label for="usersMessage">Message </label><br>
-          <textarea name="usersMessage" id="usersMessage" placeholder="Write your message here" required></textarea><br>
-    
+          <label for="usersName">Name </label><br />
+          <input
+            type="text"
+            id="usersName"
+            name="usersName"
+            placeholder="Anna Swan"
+            required
+          />
+
+          <label for="usersEmail">Email </label><br />
+          <input
+            type="email"
+            id="usersEmail"
+            name="usersEmail"
+            placeholder="anna_swan@gmail.com"
+            required
+          />
+
+          <label for="usersMessage">Message </label><br />
+          <textarea
+            name="usersMessage"
+            id="usersMessage"
+            placeholder="Write your message here"
+            required
+          ></textarea
+          ><br />
+
           <button type="submit">Submit</button>
-        
-    
         </form>
-        </div>
-       </section>
-       <hr>
-    
-       <!-- pop-up messages section; added further with js -->
-       <section id="messages">
-        <h2 class="heading">Messages</h2>
-        <ul></ul>
-       </section>
-    
-       <!-- footer (connect section); &copy added with js -->
-       <footer class="footer">
-    
-       <div class="social">
-        <a href="http://linkedin.com/in/sabina-ruzieva-838aa130a"><i class='bx bxl-linkedin-square'></i></a>
-        <a href="https://github.com/sabina0407"><i class='bx bxl-github'></i></a>
-        <a href="https://www.instagram.com/sabina.r07?igsh=MXJndzVhNDRoOTg1ZA%3D%3D&utm_source=qr"><i class='bx bxl-instagram'></i></a>
-       </div>
-      </footer>
+      </div>
+    </section>
+    <hr />
 
-  <!-- Linking JS -->
+    <!-- pop-up messages section; added further with js -->
+    <section id="messages">
+      <h2 class="heading">Messages</h2>
+      <ul></ul>
+    </section>
+
+    <!-- footer (connect section); &copy added with js -->
+    <footer class="footer">
+      <div class="social">
+        <a href="http://linkedin.com/in/sabina-ruzieva-838aa130a"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://github.com/sabina0407"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/sabina.r07?igsh=MXJndzVhNDRoOTg1ZA%3D%3D&utm_source=qr"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Linking JS -->
     <script src="js/index.js"></script>
-
-</body>
-
+  </body>
 </html>
