@@ -617,6 +617,16 @@ footer p {
     grid-template-columns: 1fr;
     padding: 2rem 50px;
   }
+  .skill-img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 45px;
+  }
+ .skill-img img {
+  width: 60%;
+  height: 60%;
+ }
   .heading {
     font-size: 3rem;
   }
@@ -634,9 +644,20 @@ footer p {
   .timeline-icon {
     left: 0;
   }
+  .timeline-date,
+  .time-content h3 {
+    font-size: 15px;
+  }
+  .timeline-content p {
+    font-size: 12px;
+  }
   .footer {
     padding: 0.7rem 1%;
   }
+  .social a {
+    font-size: 25px;
+    border-radius: 50%;
+  };
 }
 
 @media screen and (max-width: 426px) {
@@ -650,10 +671,10 @@ footer p {
     line-height: 25px;
   }
   .timeline-content h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .timeline-content p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .projects a {
     font-size: 12px;
@@ -674,8 +695,7 @@ footer p {
   #messages button {
     font-size: 12px;
   }
-  .footer p,
-  .social {
+  .footer p {
     font-size: 13px;
   }
 }
