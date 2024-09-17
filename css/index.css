@@ -685,16 +685,49 @@ footer p {
   textarea {
     font-size: 10px;
   }
-  #messages ul {
+
+  /* #messages ul {
     display: grid;
     grid-row: auto;
     grid-template-columns: repeat(4, 1fr);
   }
+
   #messages ul,
   #messages a,
   #messages button {
     font-size: 12px;
+  } */
+
+  @media screen and (max-width: 426px) {
+  
+    #messages ul {
+      margin-top: 10%; /* Increased margin for better spacing on small screens */
+      font-size: 18px; /* Reduced font size for better fit */
+    }
+  
+    #messages button {
+      margin-left: 0; /* Remove left margin */
+      float: none; /* Remove float */
+      display: block; /* Make button full width */
+      width: 100%; /* Full width button */
+      margin-top: 10px; /* Add some top margin */
+    }
+  
+    #messages li {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 0.5em 0; /* Reduce padding */
+    }
+  
+    #messages a {
+      font-size: 16px; /* Reduce font size */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 5px; /* Add bottom margin for spacing */
+      float: none; /* Remove float */
+      width: 100%; /* Full width */
+    }
   }
+
   .footer p {
     font-size: 13px;
   }
