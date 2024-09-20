@@ -67,12 +67,16 @@ window.onscroll = () => {
     let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector("header nav a [href*=" + id + " ]")
-          .classList.add("active");
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
       });
+
+      // Fix: Use template literals for proper string interpolation
+      // and add a null check before accessing classList
+      const activeLink = document.querySelector(`header nav a[href*="${id}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
     }
   });
 };
