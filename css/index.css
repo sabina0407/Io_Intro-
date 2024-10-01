@@ -19,8 +19,6 @@ html {
 }
 
 .hero {
-  /* display: flex;
-    flex-direction: column; */
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/img/bck_image.jpg);
@@ -313,7 +311,6 @@ hr {
 
 .skill-box {
   padding: 1rem;
-  /* color: #ddd; */
   cursor: pointer;
 }
 
@@ -370,17 +367,6 @@ hr {
   align-items: center;
   transition: 0.5s;
 }
-
-/* .skill-img:after {
-     content: '';
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 50%;
-     height: 90px;
-     background: rgba(100, 100, 100, 0.5);
-     border-radius: 45px 0 0 45px;
- } */
 
 .skill-title h3 {
   color: black;
@@ -686,45 +672,33 @@ footer p {
     font-size: 10px;
   }
 
-  /* #messages ul {
-    display: grid;
-    grid-row: auto;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  #messages ul,
-  #messages a,
-  #messages button {
-    font-size: 12px;
-  } */
-
   @media screen and (max-width: 426px) {
   
     #messages ul {
-      margin-top: 10%; /* Increased margin for better spacing on small screens */
-      font-size: 18px; /* Reduced font size for better fit */
+      margin-top: 10%; 
+      font-size: 18px; 
     }
   
     #messages button {
-      margin-left: 0; /* Remove left margin */
-      float: none; /* Remove float */
-      display: block; /* Make button full width */
-      width: 100%; /* Full width button */
-      margin-top: 10px; /* Add some top margin */
+      margin-left: 0; 
+      float: none; 
+      display: block; 
+      width: 100%; 
+      margin-top: 10px; 
     }
   
     #messages li {
-      flex-direction: column; /* Stack items vertically */
-      align-items: flex-start; /* Align items to the start */
-      padding: 0.5em 0; /* Reduce padding */
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 0.5em 0; 
     }
   
     #messages a {
-      font-size: 16px; /* Reduce font size */
-      margin-right: 0; /* Remove right margin */
-      margin-bottom: 5px; /* Add bottom margin for spacing */
-      float: none; /* Remove float */
-      width: 100%; /* Full width */
+      font-size: 16px; 
+      margin-right: 0; 
+      margin-bottom: 5px; 
+      float: none; 
+      width: 100%; 
     }
   }
 
